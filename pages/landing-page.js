@@ -10,7 +10,7 @@ export default function LandingPage() {
   return (
     <Maincontainer id="AboutMe">
       <NavBar></NavBar>
-      <ImageandTextContainer>
+      <ImageandTextContainer className="NavBarImageandtextContainer">
         <TextContainer>
           <Introducing>-- Introducing</Introducing>
           <HelloandName>
