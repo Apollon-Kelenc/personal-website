@@ -3,20 +3,21 @@ import { Icon } from "@iconify/react";
 
 export default function Navbar() {
   return (
-    <NavbarContainer>
+    <NavbarContainer className="NavbarContainer">
       <NameandIconContainer>
         <Icon
+          className="NavBarIcon"
           icon="material-symbols:logo-dev-outline"
           color="#84ea80"
           width="60"
           height="60"
         />
-        <Name>APOLLON</Name>
+        <Name className="NavBarName">APOLLON</Name>
       </NameandIconContainer>
-      <PageLinksContainer>
-        <Home>
+      <PageLinksContainer className="PageLinksContainer">
+        <AboutMe>
           <a href="#AboutMe">About Me</a>
-        </Home>
+        </AboutMe>
         <Skills>
           <a href="#Skills">Skills</a>
         </Skills>
@@ -24,7 +25,7 @@ export default function Navbar() {
           <a href="#Portfolio">Portfolio</a>
         </Portfolio>
       </PageLinksContainer>
-      <ContactButtonContainer>
+      <ContactButtonContainer className="NavBarContactButtonContainer">
         <a href="mailto:domenkelenc24@gmail.com">
           <ContactButton>Contact Me</ContactButton>
         </a>
@@ -48,7 +49,6 @@ const NavbarContainer = styled.div`
   align-items: center;
   color: white;
   font-size: 22px;
-  margin: 1rem 0rem 0rem 0rem;
   padding: 0rem 2rem 0rem 2rem;
   top: 0;
   position: sticky;
@@ -60,7 +60,7 @@ const PageLinksContainer = styled.div`
   gap: 3rem;
 `;
 
-const Home = styled.p`
+const AboutMe = styled.p`
   a {
     color: white;
     text-decoration: none;
@@ -97,9 +97,7 @@ const Skills = styled.p`
 `;
 
 const ContactButtonContainer = styled.div`
-  padding: 1rem 1.5rem 0rem 0rem;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 1rem;
 `;
 
 const ContactButton = styled.button`
