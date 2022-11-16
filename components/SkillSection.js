@@ -12,7 +12,7 @@ export default function SkillsInformation() {
             width="80"
             height="80"
           />
-          <p>HTML</p>
+          <HtmlText>HTML</HtmlText>
         </HTML5>
         <CSS3>
           <Icon
@@ -21,7 +21,7 @@ export default function SkillsInformation() {
             width="80"
             height="80"
           />
-          <p>CSS</p>
+          <CssText>CSS</CssText>
         </CSS3>
         <JavaScript>
           <Icon
@@ -30,7 +30,7 @@ export default function SkillsInformation() {
             width="80"
             height="80"
           />
-          <p>JAVASCRIPT</p>
+          <JavaScriptText>JAVASCRIPT</JavaScriptText>
         </JavaScript>
         <React>
           <Icon
@@ -39,7 +39,7 @@ export default function SkillsInformation() {
             width="80"
             height="80"
           />
-          <p>REACT</p>
+          <ReactText>REACT</ReactText>
         </React>
       </LogoContainer>
       <TextContainer>
@@ -97,11 +97,15 @@ const React = styled.div`
   align-items: center;
   border-radius: 20px;
   color: white;
-  padding: 3rem 4rem;
+  padding: 4rem 4rem;
   font-size: 25px;
   font-weight: bold;
   border: none;
   box-shadow: 5px 10px 18px black;
+`;
+
+const ReactText = styled.p`
+  margin: 1.5rem 0px 0px 0px;
 `;
 
 const TextContainer = styled.div`
@@ -141,9 +145,13 @@ const HTML5 = styled.div`
   box-shadow: 5px 10px 18px black;
   border-radius: 20px;
   color: white;
-  padding: 3rem 4rem;
+  padding: 4rem 4rem;
   font-size: 25px;
   font-weight: bold;
+`;
+
+const HtmlText = styled.p`
+  margin: 1.5rem 0px 0px 0px;
 `;
 
 const CSS3 = styled.div`
@@ -157,7 +165,11 @@ const CSS3 = styled.div`
   color: white;
   font-size: 25px;
   font-weight: bold;
-  padding: 3rem 4.2rem;
+  padding: 4rem 4.2rem;
+`;
+
+const CssText = styled.p`
+  margin: 1.5rem 0px 0px 0px;
 `;
 
 const JavaScript = styled.div`
@@ -169,9 +181,13 @@ const JavaScript = styled.div`
   box-shadow: 5px 10px 18px black;
   border-radius: 20px;
   color: white;
-  padding: 3rem 1.8rem;
+  padding: 4rem 1.8rem;
   font-size: 25px;
   font-weight: bold;
+`;
+
+const JavaScriptText = styled.p`
+  margin: 1.5rem 0px 0px 0px;
 `;
 
 const MySkills = styled.p`
