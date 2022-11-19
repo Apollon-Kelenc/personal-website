@@ -60,7 +60,6 @@ const MainContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   color: white;
-  padding: 1rem 0rem;
 `;
 
 const NameandIconContainer = styled.div`
