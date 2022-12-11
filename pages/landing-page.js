@@ -13,7 +13,7 @@ export default function LandingPage() {
       <ImageandTextContainer className="NavBarImageandtextContainer">
         <TextContainer>
           <Introducing>-- Introducing</Introducing>
-          <HelloandName>
+          <HelloandName className="HelloText">
             Hello<br></br>I am Apollon<br></br>Kelenc
           </HelloandName>
           <PersonalInformaition>
