@@ -78,8 +78,12 @@ const Project1Txt = styled.p`
 
 const Project1Link = styled.div`
   width: fit-content;
+  transition: 0.3s all ease-in-out;
   a {
     text-decoration: none;
+  }
+  :hover {
+    transform: scale(1.1);
   }
 `;
 

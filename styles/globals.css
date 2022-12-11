@@ -6,12 +6,14 @@ html,
 }
 
 @media screen and (max-width: 767px) {
+  .HelloText {
+    font-size: 60px !important;
+  }
   .NavbarContainer {
-    width: max-content;
+    width: 45rem;
+    gap: 5rem;
   }
-  .NavBarContactButtonContainer {
-    padding: none !important;
-  }
+
   .NavBarImageandtextContainer {
     margin: none !important;
   }
